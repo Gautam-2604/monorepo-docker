@@ -21,7 +21,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile.websocket
           push: true
-          tags: 100xdevs/todo-app-websocket:${{ github.sha }}
+          tags: gautamgaurisaria/todo-app-websocket:${{ github.sha }}
       - name: Deploy to the VM
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" &> ~/ssh_key
